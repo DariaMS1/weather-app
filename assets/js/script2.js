@@ -9,8 +9,7 @@ var longitude = '';
 
 
 //the key
-//2e1b791d707f58697c903c1b4e6fbaba
-var APIkey = 'f200583e446129dcdb6b7377ecfb0d97';
+var APIkey = ''; // API_KEY
 
 
 //parent function
