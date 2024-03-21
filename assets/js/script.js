@@ -211,7 +211,7 @@ searchBtn.on("click", (event) => {
   //printing histroy from local storage
   var storageItem = localStorage.getItem(userSearches.city);
   var createHistoryButton = $(`
-  <button class="btn btn-primary history-search" type="button">${storageItem}</button>`);
+  <button class="btn btn-primary btn-bg" type="button">${storageItem}</button>`);
 
   searchHistory.append(createHistoryButton);
 });

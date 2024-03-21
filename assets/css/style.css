@@ -8,3 +8,7 @@
   font-size: small;
   font-style: italic;
 }
+
+.btn-bg {
+  background-color: grey !important;
+}
