@@ -15,7 +15,7 @@ I learned how to create web applications using API's and different libraries.
 ## Installation
 
 Clone the repo onto your local machine and run it offline or visit the page:
-
+https://dariams1.github.io/weather-app/
 
 ## Usage
 
