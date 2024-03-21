@@ -29,7 +29,7 @@ searchBtn.on("click", (event) => {
   
 
   //the query
-  var queryUrlCityCordinates = `http://api.openweathermap.org/geo/1.0/direct?q=${searchInput.val()}&appid=${APIkey}`;
+  var queryUrlCityCordinates = `https://api.openweathermap.org/geo/1.0/direct?q=${searchInput.val()}&appid=${APIkey}`;
 
 
   fetch(queryUrlCityCordinates)
@@ -58,7 +58,7 @@ searchBtn.on("click", (event) => {
               searchInput.val().slice(1)
             } ${dayjs().format(
               "(DD/MM/YYYY)"
-            )} <img src="http://openweathermap.org/img/w/${
+            )} <img src="https://openweathermap.org/img/w/${
               data.list[0].weather[0].icon
             }.png"></h2>`
           );
@@ -100,7 +100,7 @@ searchBtn.on("click", (event) => {
           //creating the html cards
           var fiveDaysHeader = $(`<h4>5-Day Forecast</h4>`);
           var fiveDaysCards = $(`<div class="card col-2 me-3">
-          <img src="http://openweathermap.org/img/w/${day1.weather[0].icon}.png" class="card-img-top" alt="weather condition icon">
+          <img src="https://openweathermap.org/img/w/${day1.weather[0].icon}.png" class="card-img-top" alt="weather condition icon">
           <div class="card-body mb-3">
             <h5 class="card-title mb-3 fs-6 d-flex justify-content-center">${day1Date}</h5>
             <p class="border border-dark-subtle rounded d-flex justify-content-center p-2 small-txt">${day1Descriptopn}</p>
@@ -117,7 +117,7 @@ searchBtn.on("click", (event) => {
           </div>
 
           <div class="card col-2 me-3">
-          <img src="http://openweathermap.org/img/w/${day2.weather[0].icon}.png" class="card-img-top" alt="weather condition icon">
+          <img src="https://openweathermap.org/img/w/${day2.weather[0].icon}.png" class="card-img-top" alt="weather condition icon">
           <div class="card-body">
             <h5 class="card-title mb-3 fs-6 d-flex justify-content-center">${day2Date}</h5>
             <p class="border border-dark-subtle rounded d-flex justify-content-center p-2 small-txt">${day2Descriptopn}</p>
@@ -134,7 +134,7 @@ searchBtn.on("click", (event) => {
           </div>
 
           <div class="card col-2 me-3">
-          <img src="http://openweathermap.org/img/w/${day3.weather[0].icon}.png" class="card-img-top" alt="weather condition icon">
+          <img src="https://openweathermap.org/img/w/${day3.weather[0].icon}.png" class="card-img-top" alt="weather condition icon">
           <div class="card-body">
             <h5 class="card-title mb-3 fs-6 d-flex justify-content-center">${day3Date}</h5>
             <p class="border border-dark-subtle rounded d-flex justify-content-center p-2 small-txt">${day3Descriptopn}</p>
@@ -151,7 +151,7 @@ searchBtn.on("click", (event) => {
           </div>
 
           <div class="card col-2 me-3">
-          <img src="http://openweathermap.org/img/w/${day4.weather[0].icon}.png" class="card-img-top" alt="weather condition icon">
+          <img src="https://openweathermap.org/img/w/${day4.weather[0].icon}.png" class="card-img-top" alt="weather condition icon">
           <div class="card-body">
             <h5 class="card-title mb-3 fs-6 d-flex justify-content-center">${day4Date}</h5>
             <p class="border border-dark-subtle rounded d-flex justify-content-center p-2 small-txt">${day4Descriptopn}</p>
@@ -168,7 +168,7 @@ searchBtn.on("click", (event) => {
           </div>
 
           <div class="card col-2 me-3">
-          <img src="http://openweathermap.org/img/w/${day5.weather[0].icon}.png" class="card-img-top" alt="weather condition icon">
+          <img src="https://openweathermap.org/img/w/${day5.weather[0].icon}.png" class="card-img-top" alt="weather condition icon">
           <div class="card-body">
             <h5 class="card-title mb-3 fs-6 d-flex justify-content-center">${day5Date}</h5>
             <p class="border border-dark-subtle rounded d-flex justify-content-center p-2 small-txt">${day5Descriptopn}</p>
