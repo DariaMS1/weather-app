@@ -9,7 +9,8 @@ var longitude = '';
 
 
 //the key
-var APIkey = '2e1b791d707f58697c903c1b4e6fbaba';
+//2e1b791d707f58697c903c1b4e6fbaba
+var APIkey = 'f200583e446129dcdb6b7377ecfb0d97';
 
 
 //parent function
@@ -105,7 +106,8 @@ searchBtn.on("click", (event) => {
             <p class="border border-dark-subtle rounded d-flex justify-content-center p-2 small-txt">${day1Descriptopn}</p>
             <p class="card-text">
               Temp: ${(day1.main.temp - 273.15).toFixed(0)} °C
-            </p            <p class="card-text">
+            </p            
+            <p class="card-text">
               Wind: ${day1.wind.speed} KPH
             </p>
             <p class="card-text">
